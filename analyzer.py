@@ -20,15 +20,17 @@ print("Fichiers trouvés :", fichiers_log)
 
 
 total_lignes = 0
+compte_INFO = 0
+compte_WARN = 0
+compte_ERROR = 0
 
-# lecture de chaque fichiers
 for fichier in fichiers_log:
     # ouverture du fichier en mode lecturee seule
     with open(fichier, "r", encoding="utf-8") as f:
         lignes = f.readlines() #on lit toutes les lignes du fichier
-        total_lignes = total_lignes + len(lignes) #on ajoute le nombre de lignes au total
+        # total_lignes = total_lignes + len(lignes) #on ajoute le nombre de lignes au total
 
         print(fichier, "contient", len(lignes), "lignes") #on dit ce fichier contient combien de lignes d'abord
 
-print("Total de toutes les lignes :", total_lignes)
+print("Total de toutes les lignes :", total_lignes) #on affiche le nombre total en general
 
