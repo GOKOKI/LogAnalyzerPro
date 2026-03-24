@@ -3,6 +3,7 @@
 #Ce module prend les statistiques calculées par analyser.py
 #et les écrit dans un fichier rapport_YYYY-MM-DD.json horodaté.
 
+#horodaté -->
 
 import json
 import os
